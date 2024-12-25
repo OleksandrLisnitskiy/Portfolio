@@ -323,7 +323,7 @@ header .navbar ul li a:hover {
 }
 /* social icons end */
 
-/* hero media queries starts*/
+/* pfp media queries starts*/
 @media (max-width: 450px) {
   .home .btn {
     margin: 4rem 0;
@@ -341,8 +341,8 @@ header .navbar ul li a:hover {
     font-size: 2.2rem;
   }
 }
-/* hero media queries ends*/
-/* hero section end */
+/* pfp media queries ends*/
+/* pfp section end */
 
 /* about section starts */
 .about {
