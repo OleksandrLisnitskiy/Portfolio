@@ -82,6 +82,7 @@ var typed = new Typed(".typing-text", {
 
 async function fetchData(type = "skills") {
     try {
+        // Ensure the fetch URL is a string and properly quoted
         let response = await fetch("./src/skills.json");
         const data = await response.json();
         console.log(`Successfully fetched ${type}:`, data); // Debugging
@@ -93,24 +94,30 @@ async function fetchData(type = "skills") {
 }
 
 function showSkills(skills) {
+    // Ensure the DOM element exists
     let skillsContainer = document.getElementById("skillsContainer");
     if (!skillsContainer) {
         console.error("#skillsContainer not found in the DOM");
         return;
     }
+
+    // Build the HTML using template literals
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
-        <div class="bar">
-              <div class="info">
-                <img loading="lazy" src=${skill.icon} alt="${skill.name}" />
-                <span>${skill.name}</span>
-              </div>
-            </div>`
+            <div class="bar">
+                <div class="info">
+                    <img loading="lazy" src="${skill.icon}" alt="${skill.name}" />
+                    <span>${skill.name}</span>
+                </div>
+            </div>`;
     });
+
+    // Inject the generated HTML into the container
     skillsContainer.innerHTML = skillHTML;
     console.log("Skills rendered successfully"); // Debugging
 }
+
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");

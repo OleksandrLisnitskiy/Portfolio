@@ -182,10 +182,11 @@ header .navbar ul li a:hover {
 .home {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  min-height: 100vh;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  gap: 2rem;
 }
 .home #particles-js {
   position: absolute;
@@ -203,17 +204,18 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 .home .content {
-  flex: 1 1 40rem;
-  padding-top: 1rem;
+  flex: 1 1 45%;
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 40rem;
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-end;
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
-  margin-left: 6rem;
+  width: 80%;
+  max-width: 400px;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -245,8 +247,6 @@ header .navbar ul li a:hover {
 }
 .home .btn {
   margin-top: 1rem;
-  position: absolute;
-  line-height: 0;
   padding: 1.6rem 3rem;
   border-radius: 4em;
   transition: 0.5s;
@@ -274,7 +274,7 @@ header .navbar ul li a:hover {
 /* social icons start */
 .socials {
   position: relative;
-  margin-top: 9rem;
+  margin-top: 2rem;
 }
 .socials .social-icons {
   padding-left: 0;
@@ -325,6 +325,10 @@ header .navbar ul li a:hover {
 
 /* pfp media queries starts*/
 @media (max-width: 450px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
   .home .btn {
     margin: 4rem 0;
   }
@@ -339,6 +343,10 @@ header .navbar ul li a:hover {
   }
   .home .content p span {
     font-size: 2.2rem;
+  }
+  .home .image img {
+    width: 100%;
+    max-width: 250px;
   }
 }
 /* pfp media queries ends*/
@@ -527,6 +535,7 @@ header .navbar ul li a:hover {
     margin-top: 5px;
     width: 100%;
   }
+
 }
 /* skills media queries ends*/
 /* skills section ends */
