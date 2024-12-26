@@ -59,12 +59,12 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Portfolio | Kenneth Joseph";
+            $("#favicon").attr("href", "assets/animatedpfp.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            $("#favicon").attr("href", "assets/animatedpfp.png");
         }
     });
 
@@ -82,8 +82,10 @@ var typed = new Typed(".typing-text", {
 
 async function fetchData(type = "skills") {
     try {
-        let response = await fetch(type === "skills" ? "skills.json" : "./src/projects.json");
-        return await response.json();
+        let response = await fetch("./src/skills.json");
+        const data = await response.json();
+        console.log(`Successfully fetched ${type}:`, data); // Debugging
+        return data;
     } catch (error) {
         console.error(`Error fetching ${type}:`, error);
         return [];
@@ -92,6 +94,10 @@ async function fetchData(type = "skills") {
 
 function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
+    if (!skillsContainer) {
+        console.error("#skillsContainer not found in the DOM");
+        return;
+    }
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
@@ -103,10 +109,15 @@ function showSkills(skills) {
             </div>`
     });
     skillsContainer.innerHTML = skillHTML;
+    console.log("Skills rendered successfully"); // Debugging
 }
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
+    if (!projectsContainer) {
+        console.error("#work .box-container not found in the DOM");
+        return;
+    }
     let projectHTML = "";
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
@@ -145,6 +156,7 @@ function showProjects(projects) {
     /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
 
+    console.log("Projects rendered successfully"); // Debugging
 }
 
 fetchData().then(data => {

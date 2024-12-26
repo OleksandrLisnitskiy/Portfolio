@@ -480,9 +480,8 @@ header .navbar ul li a:hover {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  flex-wrap: wrap;
-  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
 }
 .skills .container .bar {
   margin-bottom: 15px;
