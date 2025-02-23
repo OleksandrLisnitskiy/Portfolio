@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Django",
+    "icon": "https://img.icons8.com/color/48/000000/django.png"
+  },
+  {
+    "name": "Flask",
+    "icon": "https://img.icons8.com/?size=60&id=ewGOClUtmFX4&format=png&color=000000"
+  },
+  {
+    "name": "Postgres",
+    "icon": "https://img.icons8.com/?size=60&id=LwQEs9KnDgIo&format=png&color=000000"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "https://img.icons8.com/?size=60&id=tBBf3P8HL0vR&format=png&color=000000"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+  },
+  {
+    "name": "Java",
+    "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+  },
+  {
+    "name": "Python",
+    "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+  },
+  {
+    "name": "AWS",
+    "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+  },
+  {
+    "name": "Git VCS",
+    "icon": "https://img.icons8.com/color/48/000000/git.png"
+  },
+  {
+    "name": "GitHub",
+    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+  }
+]

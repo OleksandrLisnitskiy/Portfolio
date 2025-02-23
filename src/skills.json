@@ -1,11 +1,19 @@
 [
     {
-        "name": "HTML5",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+        "name": "Django",
+        "icon": "https://img.icons8.com/color/48/000000/django.png"
     },
     {
-        "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+        "name": "Flask",
+        "icon": "https://img.icons8.com/?size=60&id=ewGOClUtmFX4&format=png&color=000000"
+    },
+    {
+        "name": "Postgres",
+        "icon": "https://img.icons8.com/?size=60&id=LwQEs9KnDgIo&format=png&color=000000"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/?size=60&id=tBBf3P8HL0vR&format=png&color=000000"
     },
     {
         "name": "JavaScript",
@@ -16,16 +24,8 @@
         "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
     },
     {
-        "name": "PHP",
-        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
-    },
-    {
         "name": "Python",
         "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },
-    {
-        "name": "C",
-        "icon": "https://img.icons8.com/?size=100&id=mfkStOwP4EC0&format=png&color=000000"
     },
     {
         "name": "AWS",
