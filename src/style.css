@@ -74,7 +74,7 @@ header {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
-  min-height: 60vh;
+  min-height: 20vh;
   padding: 2rem 9%;
 }
 .heading {
@@ -185,7 +185,7 @@ header .navbar ul li a:hover {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 100vh;
+  min-height: 110vh;
   gap: 2rem;
 }
 .home #particles-js {
@@ -468,7 +468,7 @@ header .navbar ul li a:hover {
 
 /* skills section starts */
 .skills {
-  min-height: 90vh;
+  min-height: 40vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
 .skills h2 {
@@ -543,7 +543,7 @@ header .navbar ul li a:hover {
 /* education section starts */
 .education {
   background: #e5ecfb;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 .education .qoute {
   font-size: 1.5rem;
