@@ -59,7 +59,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Kenneth Joseph";
+            document.title = "Portfolio | Oleksandr Lisnytskyi";
             $("#favicon").attr("href", "assets/animatedpfp.png");
         }
         else {
